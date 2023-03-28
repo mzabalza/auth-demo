@@ -6,12 +6,6 @@ const app = express();
 app.use(bodyParser.json());
 
 
-app.get('/service-status/v3', (req, res) => {
-  return res
-    .status(200)
-    .json({ message: 'Users API is up and running!, v3', status: 'OK' });
-});
-
 app.get('/service-status/v2', (req, res) => {
   return res
     .status(200)
